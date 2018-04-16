@@ -16,8 +16,8 @@ We show all contacts and if there are not contacts we display a error message. A
 
 ## Part 4 - POST, PUT, DELETE Request
 
-When we use POST we received a contact by request and we translate his body and push them into the contacts array. We don't modify the json file.
+1. When we use POST we received a contact by request and we translate his body and push them into the contacts array. We don't modify the json file.
 
-When we use PUT we modify the contact information filtring by id and we overwrite his information in array contacts.
+2. When we use PUT we modify the contact information filtring by id and we overwrite his information in array contacts.
 
-When we use DELETE we delete the contact from his array (never in json file) and we display a basic information message.
+3. When we use DELETE we delete the contact from his array (never in json file) and we display a basic information message.
