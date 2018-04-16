@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 let contacts = require('./data');
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -73,7 +74,7 @@ app.delete('/api/contacts/:id', (req, res) => {
     const reqId = req.params.id;
 
     let contact = contacts.filter(contact => {
-        return contact.id = reqId;
+        return contact.id == reqId;
     })[0];
 
     const index = contacts.indexOf(contact);
